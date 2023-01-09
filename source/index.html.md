@@ -51,13 +51,17 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE._
 </span>
 Po wejsciu na forum, pierwszą czynnością jaką należy zrobić aby móc dodawać posty, jest zalogowanie się.   
 Aby to zrobić, należy kliknąć w okienko które widnieje w prawym górnym rogu.
+<div style="text-align: center;">
 
-![Alt text](zaloguj_sie.png "Zaloguj się")
-
+  ![Alt text](zaloguj_sie.png "Zaloguj się")
+</div>
 Następnie zostaniemym przeniesieni do formularza logowania, bądź jesli nie mamy jeszcze konta,
 możemy kliknąć w reflink na dole formularza: __Zarejestruj się za darmo__.
 
+<div style="text-align: center;">
+
 ![Alt text](logowanie.png "logowanie")
+</div>
 
 Wtedy zostaniemy przeniesieni do forumlarza rejestracji, który musimy wypełnić aby założyć konto.  
 Po wypełnieniu formularza, będziemy mogli zalogować się na nasze konto.
@@ -71,15 +75,20 @@ tym razem będzię widniała tam nasza nazwa użytkownika. Po najechaniu na okie
 
 Wybieramy pierwszą opcje. 
 
+<div style="text-align: center;">
+
 ![Alt text](konto_opcje.png "Opcje konta")
+</div>
 
 Zostajemy przeniesieni do panelu naszego konta.
 
-![Alt text](edycja_konta.png "Panel konta")
+<div style="text-align: center;">
 
+![Alt text](edycja_konta.png "Panel konta")
+</div>
 W panelu wyświetlają się podstawowe informacje na temat naszego konta.  
-Aby je edytować, należy kliknąć w ikonke trybiku w prawym górnym rogu. Zostaniemy przeniesieni
-do panelu edycji, gdzie możemy edytować nasz opis lub zmienić nasze hasło.  
+Aby je edytować, należy kliknąć w ikonke _trybiku_ w prawym górnym rogu. Zostaniemy przeniesieni
+do panelu edycji, gdzie możemy edytować nasz __opis__ lub __zmienić hasło__.  
 
 Dodatkowo, możemy dodać zdjęcie profilowe naszego konta. Wystarczy, że będziemy je mieć u siebie lokalnie.
 Aby to zrobić, należy kliknąć w przycisk: __Wybierz zdjęcie profilowe__.
