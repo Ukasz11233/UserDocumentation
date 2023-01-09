@@ -1,15 +1,32 @@
 ---
-title: API Reference
+title: Szniorum
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
+  - php
   - python
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+  - Copyright (c) 2023, WiktorProsowicz  
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:  
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.  
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 includes:
   - errors
@@ -23,15 +40,24 @@ meta:
     content: Documentation for the Kittn API
 ---
 
-# Introduction
+# Wstęp
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Witamy w dokumentacji użytkownika forum internetowego Szniorum.  
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+# Logowanie/Rejestracja
+Po wejsciu na forum, pierwszą czynnością jaką należy zrobić aby móc dodawać posty, jest zalogowanie się.   
+Aby to zrobić, należy kliknąć w okienko które widnieje w prawym górnym rogu.
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+![Alt text](/home/ukasz/slate/slate/source/zaloguj_sie.png "Zaloguj się")
 
-# Authentication
+Następnie zostaniemym przeniesieni do formularza logowania, bądź jesli nie mamy jeszcze konta,
+możemy kliknąć w reflink na dole formularza: __Zarejestruj się za darmo__.
+
+![Alt text](/home/ukasz/slate/slate/source/rejestracja.png "logowanie")
+
+Wtedy zostaniemy przeniesieni do forumlarza rejestracji.
+
+![Alt text](/home/ukasz/slate/slate/source/logowanie.png "rejestracja")
 
 > To authorize, use this code:
 
