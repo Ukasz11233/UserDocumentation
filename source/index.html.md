@@ -29,16 +29,17 @@ Witamy w dokumentacji użytkownika forum internetowego Szniorum.
 Po wejsciu na forum, pierwszą czynnością jaką należy zrobić aby móc dodawać posty, jest zalogowanie się.   
 Aby to zrobić, należy kliknąć w okienko które widnieje w prawym górnym rogu.
 
-![Alt text](/home/ukasz/slate/slate/source/zaloguj_sie.png "Zaloguj się")
+![Alt text](zaloguj_sie.png "Zaloguj się")
 
 Następnie zostaniemym przeniesieni do formularza logowania, bądź jesli nie mamy jeszcze konta,
 możemy kliknąć w reflink na dole formularza: __Zarejestruj się za darmo__.
 
-![Alt text](/home/ukasz/slate/slate/source/rejestracja.png "logowanie")
+![Alt text](logowanie.png "logowanie")
 
 Wtedy zostaniemy przeniesieni do forumlarza rejestracji.
 
-![Alt text](/home/ukasz/slate/slate/source/logowanie.png "rejestracja")
+# Dodawanie postów
+
 
 > To authorize, use this code:
 
