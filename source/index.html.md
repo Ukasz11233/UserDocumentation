@@ -1,11 +1,6 @@
 ---
 title: Szniorum
 
-language_tabs: # must be one of https://git.io/vQNgJ
-  - php
-  - python
-  - javascript
-
 toc_footers:
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
@@ -27,6 +22,7 @@ Witamy w dokumentacji użytkownika forum internetowego Szniorum.
 
 <span style="font-size:smaller;">
 _Copyright (c) 2023, WiktorProsowicz_
+
 _Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:_
 
@@ -51,17 +47,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE._
 </span>
 Po wejsciu na forum, pierwszą czynnością jaką należy zrobić aby móc dodawać posty, jest zalogowanie się.   
 Aby to zrobić, należy kliknąć w okienko które widnieje w prawym górnym rogu.
-<div style="text-align: center;">
-
   ![Alt text](zaloguj_sie.png "Zaloguj się")
-</div>
+
 Następnie zostaniemym przeniesieni do formularza logowania, bądź jesli nie mamy jeszcze konta,
 możemy kliknąć w reflink na dole formularza: __Zarejestruj się za darmo__.
 
-<div style="text-align: center;">
-
 ![Alt text](logowanie.png "logowanie")
-</div>
+
 
 Wtedy zostaniemy przeniesieni do forumlarza rejestracji, który musimy wypełnić aby założyć konto.  
 Po wypełnieniu formularza, będziemy mogli zalogować się na nasze konto.
@@ -75,17 +67,13 @@ tym razem będzię widniała tam nasza nazwa użytkownika. Po najechaniu na okie
 
 Wybieramy pierwszą opcje. 
 
-<div style="text-align: center;">
 
 ![Alt text](konto_opcje.png "Opcje konta")
-</div>
 
 Zostajemy przeniesieni do panelu naszego konta.
 
-<div style="text-align: center;">
 
 ![Alt text](edycja_konta.png "Panel konta")
-</div>
 W panelu wyświetlają się podstawowe informacje na temat naszego konta.  
 Aby je edytować, należy kliknąć w ikonke _trybiku_ w prawym górnym rogu. Zostaniemy przeniesieni
 do panelu edycji, gdzie możemy edytować nasz __opis__ lub __zmienić hasło__.  
@@ -96,214 +84,35 @@ Po wybraniu należy zatwierdzić przyciskiem: __Zastosuj__ - zostanie ono wtedy 
 i zapisane jako nasze zdjęcie.
 
 # Dodawanie postów
+<span style="font-size:smaller;">
+Aby dodać post należy być zalogowanym użytkownikiem.
+</span>
 
-> To authorize, use this code:
+Aby dodać post, należy wejść do panelu naszego konta (krok opisany wyżej: __Edycja konta__).  
+Następnie, należy kliknąć w przycisk __Dodaj nowy post__, zostanie przeniesieni do panelu tworzenia nowego postu.  
 
-```ruby
-require 'kittn'
+![Alt text](dodawanie_postu.png "Dodawanie postu")
+Aby dodać post należy:
+* wybrać kategorie
+* dodać tytuł postu
+* dodać treść postu
+* (opcjonalnie) dodać tagi oddzielone spacją
+Na koniec wystarczy zapisać post.
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
+# Dodawanie komentarzy
+<span style="font-size:smaller;">
+Aby dodać komentarz pod postem należy być zalogowanym użytkownikiem.
+</span>
 
-```python
-import kittn
+Aby dodać komentarz musimy wejść w jakiś post, następnie w dolnej części postu umieszczamy treść
+komentarza i klikamy ikonkę wyślij w prawym dolnym rogu.  
+Dodatkowo jako autor postu możemy go usunąć lub edytować.
 
-api = kittn.authorize('meowmeowmeow')
-```
+![Alt text](post.png "post")
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here" \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-```
-
-> Make sure to replace `meowmeowmeow` with your API key.
-
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-# Kittens
-
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens" \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
-
-### HTTP Request
-
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2" \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
-
-## Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2" \
-  -X DELETE \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
-
+# Dodatkowe informacje
+* Na forum mamy dostępną wyszukiwarkę z której możemy korzystać szukająć po tytułach postów lub kategoriach
+* Z lewej strony panelu głównego mamy dostępne najpopularniejsze kategorie, które możemy wybrać klikając w nie
+* Aby przeglądać posty nie trzeba zakładać konta
+* Możemy "lajkować" posty, dzięki czemu bedą one miały większy "zasięg"
+* Możemy również "lajkować" komentarze
