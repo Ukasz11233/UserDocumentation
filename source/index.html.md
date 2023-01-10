@@ -4,12 +4,9 @@ title: Szniorum
 toc_footers:
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
-includes:
-  - errors
 
 search: true
 
-code_clipboard: true
 
 meta:
   - name: description
